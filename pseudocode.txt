@@ -1,0 +1,47 @@
+Psuedocode
+- To do 
+    - short term
+        - Find ideal layout
+        - work on positioning
+    -Long term
+        - Find out how to embed needed elements 
+            -clickable images (when clicked it runs a function)
+
+
+-Elements
+    -Buttons
+    -Skins (?)
+
+-Variables, arrays, functions **IGNORE THIS FOR NOW**
+    - Hit key -->function
+    - Pick random key --> function
+    - Past keys hit --> array
+    - Reset -->function
+        - Initializes all variables
+    - end tally function 
+        - display all variables at end of game 
+    
+
+
+-Reset/Setup
+    -Reset the game (just like hangman reset)
+        -initialize all variables and arrays
+-Gameplay
+    -random key is hit by computer
+    -player hits key -> tone plays, color fills until release 
+        - False --> not in past array
+            - angry tone
+            - Run Reset
+            - run end tally
+        - Correct -->in past array
+            -Happy tone, all colors fill
+            -add pressed button to past array
+            -add one to score tally
+
+-End tally
+    - display gameplay
+        - wins
+        - losses
+        - longest streak (?)
+        - last game streak
+        - average streak (?)
