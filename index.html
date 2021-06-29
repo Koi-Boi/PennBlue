@@ -6,6 +6,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ CSS-File-Changes
+    <link rel="stylesheet" href="simonsays.css">
+
     <script src="Simon_says_java.js"></script>
     <style>
   .button1 {
@@ -40,13 +43,18 @@
 </head>
 <body>
     <h1>SIMON SAYS</h1>
-    <h2>CLICK A BUTTON TO START PLAYING</h2>
+    <hr>
+    <div id="startButton">
+      <button>Press to Begin</button>
+    </div>
     <div class="button1"></div>
+    <br>
     <div class="button2"></div>
     <div class="button3"></div>
+    <br>
     <div class="button4"></div>
     <div class="container">
-        <h2>Basic Table</h2>          
+        <h2>Stats</h2>          
         <table class="table">
           <thead>
             <tr>
