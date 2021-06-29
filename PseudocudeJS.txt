@@ -1,0 +1,26 @@
+-Variables, arrays, functions **IGNORE THIS FOR NOW**
+    - Hit key -->function
+    - Pick random key --> function
+    - Past keys hit --> array
+    - Reset -->function
+        - Initializes all variables
+    - end tally function 
+        - display all variables at end of game 
+-Ints 
+  -number of games
+  -high score
+  -last score
+  -average score
+-arrays
+ -list of choices
+   -0,1,2,3 corrasponding to the Buttons
+ -computer pattern
+  -the random sequence the computer selects
+ -user pattern
+  -a list of the users inputs to check if they match the computers
+ 
+ Elements:
+ -four buttons/clickable images
+ -page title
+ -divs for displaying the scores
+ 
