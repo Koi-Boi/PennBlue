@@ -28,6 +28,8 @@ body{
     background-color: blue;
     border-radius: 50%;
     display: inline-block;
+    position: absolute;
+    right: 60%
     }
     .button3 {
     height: 75px;
@@ -35,6 +37,8 @@ body{
     background-color: yellow;
     border-radius: 50%;
     display: inline-block;
+    position: absolute;
+    right: 31%;
     }
     .button4 {
     height: 75px;
@@ -45,6 +49,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
+    margin-top: 70px;
     }
     #startButton{
         text-align: center;
