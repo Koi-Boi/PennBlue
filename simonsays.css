@@ -1,0 +1,51 @@
+h1{
+   text-align: center; 
+   font-style: oblique;
+   color: white;
+}
+.table{
+    color: white;
+}
+h2{
+    color: white;
+}
+body{
+    background-color: rgb(68, 67, 67);
+}
+.button1 {
+    height: 75px;
+    width: 75px;
+    background-color: red;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    }
+    .button2 {
+    height: 75px;
+    width: 75px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    }
+    .button3 {
+    height: 75px;
+    width: 75px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+    }
+    .button4 {
+    height: 75px;
+    width: 75px;
+    background-color: green;
+    border-radius: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    }
+    #startButton{
+        text-align: center;
+    }
