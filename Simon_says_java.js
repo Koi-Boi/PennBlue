@@ -26,7 +26,9 @@ $(document).ready(function(){
          if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
             refresh();
+            
          }
+       
        });
        $(".button2").on("click", function(){
         pastPCs.push(2);
@@ -69,6 +71,7 @@ $(document).ready(function(){
             for(var i=0; i<compArr.length; i++){
                 if(compArr[i] != playerArr[i]){
                     isTrue = false;
+                    
                 }
             }
             
@@ -89,15 +92,25 @@ function reset (){
         pastPCs = [];
         pastCCs = [];
         if(lastScore > highScore){
-            highScore = lastScore
+            highScore = lastScore;
         }
-        
+        var Hscores = document.getElementById("Hscores");
+        var Pscores = document.getElementById("Pscores");
+        var NGscores = document.getElementById("NGscores");
+        var Ascores = document.getElementById("Ascores");
+
+        $(Hscores).text("High Score: " + highScore);
+        $(Pscores).text("Previous Score: " + lastScore);
+        $(NGscores).text("number of games played: " + numberOfGames);
+        $(Ascores).text("Average score: " + averageScore);
     }
 }   
 function refresh (){
     if(compareArray(pastCCs, pastPCs) == true){
         Cselect();
     }
+    
 }
+
 
 
