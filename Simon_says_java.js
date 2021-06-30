@@ -1,12 +1,16 @@
 
 var pastCCs = [];
 var pastPCs = [];
+//function for picking random button for the player to press
 function Cselect(){
     var rand = Math.floor(Math.random() *3)+1;
     pastCCs.push(rand);
     console.log(pastCCs);
 }
 Cselect();
+
+
+//adds event listeners for clicking on the colored buttons
 $(document).ready(function(){
     $(".button1").on("click", function(){
         pastPCs.push("1");
@@ -30,6 +34,7 @@ $(document).ready(function(){
       }); 
       
 });
+  //function for comparing the computers selections and yours
   function compareArray(compArr, playerArr){
         var isTrue = true;
         // For each element of both arrays
@@ -45,5 +50,4 @@ $(document).ready(function(){
         
     }
 compareArray(pastCCs, pastPCs);
-//compareArray(pastCCs, pastPCs);
 
