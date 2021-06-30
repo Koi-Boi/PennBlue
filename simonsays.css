@@ -33,6 +33,9 @@ body {
 	background-color:red;
 	outline: none;
 }
+.button1:focus{
+	outline:none;
+}
 
 .button2 {
 	height: 75px;
@@ -47,6 +50,9 @@ body {
 {
 background-color:blue;
 outline: none;
+}
+.button2:focus{
+	outline:none;
 }
 
 .button3 {
@@ -64,6 +70,9 @@ outline: none;
 background-color:yellow;
 outline: none;
 }
+.button3:focus{
+	outline:none;
+}
 
 .button4 {
 	height: 75px;
@@ -78,6 +87,9 @@ outline: none;
 {
 background-color:green;
 outline: none;
+}
+.button4:focus{
+	outline:none;
 }
 
 .button5 {
@@ -170,6 +182,9 @@ outline: none;
     border-radius: 10px;
 	margin: auto;
 	outline: none;
+}
+.glow-on-hover:focus{
+	outline:none;
 }
 
 .glow-on-hover:before {
