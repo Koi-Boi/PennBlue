@@ -26,6 +26,15 @@ body {
 	background-color: #111324;
 	border-radius: 50%;
 	border: 4px solid red;
+	outline: none;	
+}
+
+.button1:hover {
+	background-color:red;
+	outline: none;
+}
+.button1:focus{
+	outline:none;
 }
 
 .button2 {
@@ -34,6 +43,16 @@ body {
 	background-color: #111324;
 	border-radius: 50%;
 	border: 4px solid blue;
+	outline: none;
+}
+
+.button2:hover
+{
+background-color:blue;
+outline: none;
+}
+.button2:focus{
+	outline:none;
 }
 
 .button3 {
@@ -43,6 +62,16 @@ body {
 	border-radius: 50%;
 	margin-left: 100px;
 	border: 4px solid yellow;
+	outline: none;
+}
+
+.button3:hover
+{
+background-color:yellow;
+outline: none;
+}
+.button3:focus{
+	outline:none;
 }
 
 .button4 {
@@ -51,6 +80,25 @@ body {
 	background-color: #111324;
 	border-radius: 50%;
 	border: 4px solid green;
+	outline: none;
+}
+
+.button4:hover
+{
+background-color:green;
+outline: none;
+}
+.button4:focus{
+	outline:none;
+}
+
+.button5 {
+	height: 112.5px;
+	width: 112.5px;
+	background-color: #111324;
+	border-radius: 50%;
+	margin-top: 100px;
+	border: 4px solid white;
 }
 
 #startButton {
@@ -97,7 +145,7 @@ body {
 #scores {
 	display: inline-block;
 	word-break: break-word;
-	max-width: 200px;
+	max-width: 300px;
 	background-color: transparent;
 	height: 500px;
 	position:absolute;
@@ -105,7 +153,7 @@ body {
 	white-space: nowrap;
 	color: white;
 	border: 1px dashed transparent;
-	padding: 1em;
+	padding: 15px;
     font-size: calc(0.6vw + 0.6em);
 	direction: ltr;
     width: 30vw;
@@ -121,10 +169,6 @@ body {
     hyphens: auto;
 }
 
-
-
-
-
 .glow-on-hover {
     width: 220px;
     height: 50px;
@@ -137,6 +181,10 @@ body {
     z-index: 0;
     border-radius: 10px;
 	margin: auto;
+	outline: none;
+}
+.glow-on-hover:focus{
+	outline:none;
 }
 
 .glow-on-hover:before {
