@@ -48,3 +48,16 @@ $(document).ready(function(){
         }
 compareArray(pastCCs, pastPCs);
 
+//Gameplay
+//random key is hit by computer
+Cselect();
+//     -player hits key -> tone plays, color fills until release 
+//         - False --> not in past array
+//             - angry tone
+//             - Run Reset
+//             - run end tally
+//         - Correct -->in past array
+//             -Happy tone, all colors fill
+//             -add pressed button to past array
+//             -add one to score tally
+
