@@ -34,20 +34,17 @@ $(document).ready(function(){
       }); 
       
 });
+
   //function for comparing the computers selections and yours
   function compareArray(compArr, playerArr){
         var isTrue = true;
-        // For each element of both arrays
-        for(var i = 0 ; i <= compArr.length; i++){
-             // compare if they are the same
+             // compare if the last elements are the same
                 // if they are different, return false
-            if(compArr[compArr.length] != playerArr[playerArr.length]){
+            if(compArr[compArr.length-1 ] != playerArr[playerArr.length-1 ]){
                 isTrue = false;
             }
-            console.log(isTrue)
+        console.log(isTrue)
          return isTrue;
         }
-        
-    }
 compareArray(pastCCs, pastPCs);
 
