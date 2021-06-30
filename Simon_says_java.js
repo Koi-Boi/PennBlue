@@ -9,7 +9,7 @@ var numberOfGames = 0;
 //function for picking random button for the player to press
 function Cselect(){
     pastPCs = [];
-    var rand = Math.floor(Math.random() *3)+1;
+    var rand = Math.floor(Math.random() *4)+1;
     pastCCs.push(rand);
    console.log(pastCCs);
 }
