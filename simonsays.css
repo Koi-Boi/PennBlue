@@ -13,6 +13,7 @@ body{
     background-color: rgb(68, 67, 67);
 }
 .button1 {
+    margin-top: 50px;
     height: 75px;
     width: 75px;
     background-color: red;
@@ -29,6 +30,7 @@ body{
     width: 75px;
     background-color: yellow;
     border-radius: 50%;
+    margin-left: 100px;
     }
     .button4 {
     height: 75px;
@@ -39,3 +41,23 @@ body{
     #startButton{
         text-align: center;
     }
+    .align {
+        display: flex;
+        justify-content: center;
+      }
+      
+    .top-row {
+        display: flex;
+        justify-content: center;;
+      }
+    
+    .middle-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto;
+      } 
+    .bottom-row {
+        display: flex;
+        justify-content: center;;
+      }  
