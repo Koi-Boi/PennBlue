@@ -41,7 +41,7 @@ $(document).ready(function(){
         for(var i = 0 ; i <= compArr.length; i++){
              // compare if they are the same
                 // if they are different, return false
-            if(compArr[compArr.length] != playerArr[playerArr.length]){
+            if(compArr[compArr.length-1] != playerArr[playerArr.length-1]){
                 isTrue = false;
             }
             console.log(isTrue)
