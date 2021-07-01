@@ -34,7 +34,7 @@ $(document).ready(function(){
          }
        
        });
-       $(".button2").on("click", function(){
+        $(".button2").on("click", function(){
         pastPCs.push(2);
         console.log("2");
         console.log(pastPCs);
@@ -45,22 +45,41 @@ $(document).ready(function(){
          }
         
     
-       });
-       $(".button3").on("click", function(){
+        });
+        $(".button3").on("click", function(){
         pastPCs.push(3);
         console.log("3");
         console.log(pastPCs);
+        });
+        $(".button2").on("click", function(){
+        pastPCs.push(2);
+        console.log("2");
+        console.log(pastPCs);
+        compareArray(pastCCs, pastPCs);
+        });
+        $(".button3").on("click", function(){
+        pastPCs.push(3);
+        console.log("3");
+        console.log(pastPCs);
+        compareArray(pastCCs, pastPCs);
+        }); 
+        }); 
+        $(".button4").on("click", function(){
+        pastPCs.push(4);
+        console.log("4");
+        console.log(pastPCs);
+        compareArray(pastCCs, pastPCs);
+        }); 
         if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
             reset();
             refresh(); 
-         }
-     
-       }); 
+        }
        $(".button4").on("click", function(){
         pastPCs.push(4);
         console.log("4");
         console.log(pastPCs);
+        }); 
         if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
             reset();
