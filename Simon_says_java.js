@@ -1,4 +1,5 @@
 
+//Variables and Arrays
 var pastCCs = [];
 var pastPCs = [];
 var highScore = 0;
@@ -6,6 +7,8 @@ var lastScore = 0;
 var allScores = [];
 var averageScore = 0;
 var numberOfGames = 0;
+
+
 //function for picking random button for the player to press
 function Cselect(){
     pastPCs = [];
@@ -13,6 +16,7 @@ function Cselect(){
     pastCCs.push(rand);
    console.log(pastCCs);
 }
+
 //adds event listeners for clicking on the colored buttons and the start button
 $(document).ready(function(){
     $(".glow-on-hover").on("click", function(e){
@@ -46,30 +50,6 @@ $(document).ready(function(){
         pastPCs.push(3);
         console.log("3");
         console.log(pastPCs);
-<<<<<<< HEAD
-      });
-      $(".button2").on("click", function(){
-       pastPCs.push(2);
-       console.log("2");
-       console.log(pastPCs);
-       compareArray(pastCCs, pastPCs);
-      });
-      $(".button3").on("click", function(){
-       pastPCs.push(3);
-       console.log("3");
-       console.log(pastPCs);
-       compareArray(pastCCs, pastPCs);
-      }); 
-      $(".button4").on("click", function(){
-       pastPCs.push(4);
-       console.log("4");
-       console.log(pastPCs);
-       compareArray(pastCCs, pastPCs);
-      }); 
-      
-});
-
-=======
         if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
             reset();
@@ -89,9 +69,8 @@ $(document).ready(function(){
         
        }); 
     });
->>>>>>> 2a7afa1b483f5d7465841c91820bcf2991ec853c
-  //function for comparing the computers selections and yours
-  //function for comparing the computers selections and yours
+
+//function for comparing the computers selections and yours
   function compareArray(compArr, playerArr){
         var isTrue = true;
              // compare if the last elements are the same
@@ -107,6 +86,7 @@ $(document).ready(function(){
          return isTrue;
         }
    
+//resets the game when you enter inncorrect
 function reset (){
     if(compareArray(pastCCs, pastPCs)== false){
         lastScore = pastPCs.length;
@@ -133,11 +113,16 @@ function reset (){
         $(Ascores).text("Average score: " + averageScore);
     }
 }   
+
+//resets the game when enter correct
 function refresh (){
     if(compareArray(pastCCs, pastPCs) == true){
+        //replay the past buttons here
         Cselect();
     } 
 }
+
+
 
 
 
