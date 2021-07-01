@@ -69,8 +69,8 @@ $(document).ready(function(){
         
        }); 
     });
-
-//function for comparing the computers selections and yours
+  //function for comparing the computers selections and yours
+  //function for comparing the computers selections and yours
   function compareArray(compArr, playerArr){
         var isTrue = true;
              // compare if the last elements are the same
