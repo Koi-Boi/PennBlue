@@ -25,8 +25,8 @@ $(document).ready(function(){
          console.log(pastPCs);
          if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
-            refresh();
-            
+            reset();
+            refresh();   
          }
        
        });
@@ -36,6 +36,7 @@ $(document).ready(function(){
         console.log(pastPCs);
         if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
+            reset();
             refresh();
          }
         
@@ -47,7 +48,8 @@ $(document).ready(function(){
         console.log(pastPCs);
         if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
-            refresh();
+            reset();
+            refresh(); 
          }
      
        }); 
@@ -57,6 +59,7 @@ $(document).ready(function(){
         console.log(pastPCs);
         if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
+            reset();
             refresh();
          }
         
@@ -78,9 +81,9 @@ $(document).ready(function(){
         console.log(isTrue)
          return isTrue;
         }
-     
+   
 function reset (){
-    if(compareArray(pastCCs, pastPCs) == false){
+    if(compareArray(pastCCs, pastPCs)== false){
         lastScore = pastPCs.length;
         allScores.push(lastScore);
         numberOfGames = allScores.length;
@@ -108,8 +111,7 @@ function reset (){
 function refresh (){
     if(compareArray(pastCCs, pastPCs) == true){
         Cselect();
-    }
-    
+    } 
 }
 
 
