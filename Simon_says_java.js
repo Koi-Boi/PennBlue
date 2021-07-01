@@ -23,7 +23,7 @@ $(document).ready(function(){
         e.stopPropagation();
         Cselect();
      });
-     $(".button1").on("click", function(){
+    $(".button1").on("click", function(){
          pastPCs.push(1);
          console.log("1");
          console.log(pastPCs);
@@ -33,78 +33,75 @@ $(document).ready(function(){
             refresh();   
          }
        
-       });
-        $(".button2").on("click", function(){
-        pastPCs.push(2);
-        console.log("2");
-        console.log(pastPCs);
-        if(pastPCs.length == pastCCs.length){
-            compareArray(pastCCs, pastPCs);
-            reset();
-            refresh();
-         }
-        
-    
-        });
-        $(".button3").on("click", function(){
-        pastPCs.push(3);
-        console.log("3");
-        console.log(pastPCs);
-        });
-        $(".button2").on("click", function(){
-        pastPCs.push(2);
-        console.log("2");
-        console.log(pastPCs);
-        compareArray(pastCCs, pastPCs);
-        });
-        $(".button3").on("click", function(){
-        pastPCs.push(3);
-        console.log("3");
-        console.log(pastPCs);
-        compareArray(pastCCs, pastPCs);
-        }); 
-        }); 
-        $(".button4").on("click", function(){
-        pastPCs.push(4);
-        console.log("4");
-        console.log(pastPCs);
-        compareArray(pastCCs, pastPCs);
-        }); 
-        if(pastPCs.length == pastCCs.length){
-            compareArray(pastCCs, pastPCs);
-            reset();
-            refresh(); 
-        }
-       $(".button4").on("click", function(){
-        pastPCs.push(4);
-        console.log("4");
-        console.log(pastPCs);
-        }); 
-        if(pastPCs.length == pastCCs.length){
-            compareArray(pastCCs, pastPCs);
-            reset();
-            refresh();
-         }
-        
-       }); 
     });
-  //function for comparing the computers selections and yours
-  //function for comparing the computers selections and yours
-  function compareArray(compArr, playerArr){
-        var isTrue = true;
-             // compare if the last elements are the same
-                // if they are different, return false
-            for(var i=0; i<compArr.length; i++){
-                if(compArr[i] != playerArr[i]){
-                    isTrue = false;
-                    
-                }
-            }
-            
-        console.log(isTrue)
-         return isTrue;
+    $(".button2").on("click", function(){
+    pastPCs.push(2);
+    console.log("2");
+    console.log(pastPCs);
+    if(pastPCs.length == pastCCs.length){
+        compareArray(pastCCs, pastPCs);
+        reset();
+        refresh();
         }
-   
+    
+
+    });
+    $(".button3").on("click", function(){
+    pastPCs.push(3);
+    console.log("3");
+    console.log(pastPCs);
+    });
+    $(".button2").on("click", function(){
+    pastPCs.push(2);
+    console.log("2");
+    console.log(pastPCs);
+    compareArray(pastCCs, pastPCs);
+    });
+    $(".button3").on("click", function(){
+    pastPCs.push(3);
+    console.log("3");
+    console.log(pastPCs);
+    compareArray(pastCCs, pastPCs);
+    }); 
+    $(".button4").on("click", function(){
+    pastPCs.push(4);
+    console.log("4");
+    console.log(pastPCs);
+    compareArray(pastCCs, pastPCs);
+    }); 
+    if(pastPCs.length == pastCCs.length){
+        compareArray(pastCCs, pastPCs);
+        reset();
+        refresh(); 
+    }
+    $(".button4").on("click", function(){
+    pastPCs.push(4);
+    console.log("4");
+    console.log(pastPCs);
+    }); 
+    if(pastPCs.length == pastCCs.length){
+        compareArray(pastCCs, pastPCs);
+        reset();
+        refresh();
+    };
+}); 
+//function for comparing the computers selections and yours
+//function for comparing the computers selections and yours
+function compareArray(compArr, playerArr){
+    var isTrue = true;
+            // compare if the last elements are the same
+            // if they are different, return false
+    for(var i=0; i<compArr.length; i++){
+        if(compArr[i] != playerArr[i]){
+            isTrue = false;
+            
+        }
+    }
+            
+    console.log(isTrue)
+        return isTrue;
+}
+
 //resets the game when you enter inncorrect
 function reset (){
     if(compareArray(pastCCs, pastPCs)== false){
