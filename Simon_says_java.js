@@ -1,4 +1,5 @@
 
+//Variables and Arrays
 var pastCCs = [];
 var pastPCs = [];
 var highScore = 0;
@@ -6,6 +7,8 @@ var lastScore = 0;
 var allScores = [];
 var averageScore = 0;
 var numberOfGames = 0;
+
+
 //function for picking random button for the player to press
 function Cselect(){
     pastPCs = [];
@@ -13,6 +16,7 @@ function Cselect(){
     pastCCs.push(rand);
    console.log(pastCCs);
 }
+
 //adds event listeners for clicking on the colored buttons and the start button
 $(document).ready(function(){
     $(".glow-on-hover").on("click", function(e){
@@ -66,7 +70,6 @@ $(document).ready(function(){
         console.log(pastPCs);
         compareArray(pastCCs, pastPCs);
         }); 
-
         if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
             reset();
@@ -76,12 +79,15 @@ $(document).ready(function(){
         pastPCs.push(4);
         console.log("4");
         console.log(pastPCs);
-            if(pastPCs.length == pastCCs.length){
-                compareArray(pastCCs, pastPCs);
-                reset();
-                refresh();
-            }
         }); 
+        if(pastPCs.length == pastCCs.length){
+            compareArray(pastCCs, pastPCs);
+            reset();
+            refresh();
+         }
+        
+       }); 
+    });
   //function for comparing the computers selections and yours
   //function for comparing the computers selections and yours
   function compareArray(compArr, playerArr){
@@ -99,6 +105,7 @@ $(document).ready(function(){
          return isTrue;
         }
    
+//resets the game when you enter inncorrect
 function reset (){
     if(compareArray(pastCCs, pastPCs)== false){
         lastScore = pastPCs.length;
@@ -125,11 +132,16 @@ function reset (){
         $(Ascores).text("Average score: " + averageScore);
     }
 }   
+
+//resets the game when enter correct
 function refresh (){
     if(compareArray(pastCCs, pastPCs) == true){
+        //replay the past buttons here
         Cselect();
     } 
 }
+
+
 
 
 
