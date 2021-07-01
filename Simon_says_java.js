@@ -79,29 +79,6 @@ $(document).ready(function(){
     console.log("3");
     console.log(pastPCs);
     });
-    $(".button2").on("click", function(){
-    pastPCs.push(2);
-    console.log("2");
-    console.log(pastPCs);
-    compareArray(pastCCs, pastPCs);
-    });
-    $(".button3").on("click", function(){
-    pastPCs.push(3);
-    console.log("3");
-    console.log(pastPCs);
-    compareArray(pastCCs, pastPCs);
-    }); 
-    $(".button4").on("click", function(){
-    pastPCs.push(4);
-    console.log("4");
-    console.log(pastPCs);
-    compareArray(pastCCs, pastPCs);
-    }); 
-    if(pastPCs.length == pastCCs.length){
-        compareArray(pastCCs, pastPCs);
-        reset();
-        refresh(); 
-    }
     $(".button4").on("click", function(){
     pastPCs.push(4);
     console.log("4");
