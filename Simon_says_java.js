@@ -87,6 +87,11 @@ $(document).ready(function(){
     pastPCs.push(3);
     console.log("3");
     console.log(pastPCs);
+    if(pastPCs.length == pastCCs.length){
+        compareArray(pastCCs, pastPCs);
+        reset();
+        refresh();
+    }
     });
     $(".button4").on("click", function(){
     pastPCs.push(4);
