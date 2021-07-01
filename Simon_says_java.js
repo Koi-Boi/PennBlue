@@ -12,33 +12,42 @@ function Cselect(){
     var rand = Math.floor(Math.random() *4)+1;
     pastCCs.push(rand);
    console.log(pastCCs);
-   for(var i=0; i<pastCCs.length; i++){
-       var selected = pastCCs[i];
-       if(selected == 1){
-        document.getElementById(selected).style.backgroundColor = "red";
-        setTimeout(function(){ document.getElementById(selected).style.backgroundColor = "#111324"; }, 1000);
-       }  
+   
+    //for(var i=0; i<pastCCs.length; i++){
+        //var selected = pastCCs[i];
+        if(rand == 1){
+         document.getElementById(rand).style.backgroundColor = "red";
+         setTimeout(function(){ document.getElementById(rand).style.backgroundColor = "#111324"; }, 1000);
+         var snd = new Audio("simonSound1.mp3"); // buffers automatically when created
+snd.play();
+        }  
        
-        if(selected == 2){
-        document.getElementById(selected).style.backgroundColor = "blue";
-        setTimeout(function(){ document.getElementById(selected).style.backgroundColor = "#111324"; }, 1000);
-       } 
+         if(rand == 2){
+         document.getElementById(rand).style.backgroundColor = "blue";
+         setTimeout(function(){ document.getElementById(rand).style.backgroundColor = "#111324"; }, 1000);
+         var snd = new Audio("simonSound2.mp3");; // buffers automatically when created
+snd.play();
+        } 
        
-         if(selected == 3){
-        document.getElementById(selected).style.backgroundColor = "yellow";
-        setTimeout(function(){ document.getElementById(selected).style.backgroundColor = "#111324"; }, 1000);
-       }
+          if(rand == 3){
+         document.getElementById(rand).style.backgroundColor = "yellow";
+         setTimeout(function(){ document.getElementById(rand).style.backgroundColor = "#111324"; }, 1000);
+         var snd = new Audio("simonSound3.mp3"); // buffers automatically when created
+snd.play();
+        }
        
-        if(selected == 4){
-        document.getElementById(selected).style.backgroundColor = "green";
-        setTimeout(function(){ document.getElementById(selected).style.backgroundColor = "#111324"; }, 1000);
-       }  
+         if(rand == 4){
+         document.getElementById(rand).style.backgroundColor = "green";
+         setTimeout(function(){ document.getElementById(rand).style.backgroundColor = "#111324"; }, 1000);
+         var snd = new Audio("simonSound4.mp3"); // buffers automatically when created
+snd.play();
+        }  
        
-    setTimeout(function(){ document.getElementById("1").style.backgroundColor = "#111324"; }, 1000);
-    setTimeout(function(){ document.getElementById("2").style.backgroundColor = "#111324"; }, 1000);
-    setTimeout(function(){ document.getElementById("3").style.backgroundColor = "#111324"; }, 1000);
-    setTimeout(function(){ document.getElementById("4").style.backgroundColor = "#111324"; }, 1000);
-     } 
+       setTimeout(function(){ document.getElementById("1").style.backgroundColor = "#111324"; }, 1000);
+       setTimeout(function(){ document.getElementById("2").style.backgroundColor = "#111324"; }, 1000);
+       setTimeout(function(){ document.getElementById("3").style.backgroundColor = "#111324"; }, 1000);
+       setTimeout(function(){ document.getElementById("4").style.backgroundColor = "#111324"; }, 1000);
+//      } 
     
 }
 //adds event listeners for clicking on the colored buttons and the start button
@@ -141,6 +150,19 @@ function refresh (){
         Cselect();
     } 
 }
-
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function(){
+        this.sound.play();
+    }
+    this.stop = function(){
+        this.sound.pause();
+    }    
+}
 
 
