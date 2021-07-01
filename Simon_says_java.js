@@ -1,4 +1,5 @@
 
+//Variables and Arrays
 var pastCCs = [];
 var pastPCs = [];
 var highScore = 0;
@@ -8,6 +9,7 @@ var averageScore = 0;
 var numberOfGames = 0;
 var newItem = document.createElement("div")
 newItem.className = streak;
+
 //function for picking random button for the player to press
 // function Cselect(){
 //     pastPCs = [];
@@ -94,7 +96,7 @@ $(document).ready(function(){
         e.stopPropagation();
         Cselect();
      });
-     $(".button1").on("click", function(){
+    $(".button1").on("click", function(){
          pastPCs.push(1);
          console.log("1");
          console.log(pastPCs);
@@ -107,6 +109,7 @@ $(document).ready(function(){
             refresh();   
         }
        
+
        });
        $(".button2").on("click", function(){
         pastPCs.push(2);
@@ -164,11 +167,16 @@ $(document).ready(function(){
                     
                 }
             }
+
             
-        console.log(isTrue)
-         return isTrue;
         }
-   
+    }
+            
+    console.log(isTrue)
+        return isTrue;
+}
+
+//resets the game when you enter inncorrect
 function reset (){
     if(compareArray(pastCCs, pastPCs)== false){
         lastScore = pastPCs.length;
@@ -195,8 +203,11 @@ function reset (){
         $(Ascores).text("Average score: " + averageScore);
     }
 }   
+
+//resets the game when enter correct
 function refresh (){
     if(compareArray(pastCCs, pastPCs) == true){
+        //replay the past buttons here
         Cselect();
          clicks = 0;
     } 
@@ -205,3 +216,8 @@ function streak (){
 newItem.innerHTML = pastCCs.length;
 document.getElementById("button5").appendChild(newItem);
 }
+
+
+
+
+
