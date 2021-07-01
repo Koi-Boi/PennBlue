@@ -46,30 +46,6 @@ $(document).ready(function(){
         pastPCs.push(3);
         console.log("3");
         console.log(pastPCs);
-<<<<<<< HEAD
-      });
-      $(".button2").on("click", function(){
-       pastPCs.push(2);
-       console.log("2");
-       console.log(pastPCs);
-       compareArray(pastCCs, pastPCs);
-      });
-      $(".button3").on("click", function(){
-       pastPCs.push(3);
-       console.log("3");
-       console.log(pastPCs);
-       compareArray(pastCCs, pastPCs);
-      }); 
-      $(".button4").on("click", function(){
-       pastPCs.push(4);
-       console.log("4");
-       console.log(pastPCs);
-       compareArray(pastCCs, pastPCs);
-      }); 
-      
-});
-
-=======
         if(pastPCs.length == pastCCs.length){
             compareArray(pastCCs, pastPCs);
             reset();
@@ -89,7 +65,6 @@ $(document).ready(function(){
         
        }); 
     });
->>>>>>> 2a7afa1b483f5d7465841c91820bcf2991ec853c
   //function for comparing the computers selections and yours
   //function for comparing the computers selections and yours
   function compareArray(compArr, playerArr){
