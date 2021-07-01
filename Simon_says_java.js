@@ -12,6 +12,34 @@ function Cselect(){
     var rand = Math.floor(Math.random() *4)+1;
     pastCCs.push(rand);
    console.log(pastCCs);
+   for(var i=0; i<pastCCs.length; i++){
+       var selected = pastCCs[i];
+       if(selected == 1){
+        document.getElementById(selected).style.backgroundColor = "red";
+        setTimeout(function(){ document.getElementById(selected).style.backgroundColor = "#111324"; }, 1000);
+       }  
+       
+        if(selected == 2){
+        document.getElementById(selected).style.backgroundColor = "blue";
+        setTimeout(function(){ document.getElementById(selected).style.backgroundColor = "#111324"; }, 1000);
+       } 
+       
+         if(selected == 3){
+        document.getElementById(selected).style.backgroundColor = "yellow";
+        setTimeout(function(){ document.getElementById(selected).style.backgroundColor = "#111324"; }, 1000);
+       }
+       
+        if(selected == 4){
+        document.getElementById(selected).style.backgroundColor = "green";
+        setTimeout(function(){ document.getElementById(selected).style.backgroundColor = "#111324"; }, 1000);
+       }  
+       
+    setTimeout(function(){ document.getElementById("1").style.backgroundColor = "#111324"; }, 1000);
+    setTimeout(function(){ document.getElementById("2").style.backgroundColor = "#111324"; }, 1000);
+    setTimeout(function(){ document.getElementById("3").style.backgroundColor = "#111324"; }, 1000);
+    setTimeout(function(){ document.getElementById("4").style.backgroundColor = "#111324"; }, 1000);
+     } 
+    
 }
 //adds event listeners for clicking on the colored buttons and the start button
 $(document).ready(function(){
